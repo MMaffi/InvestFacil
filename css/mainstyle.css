@@ -1,0 +1,14 @@
+/* Main Style */
+main {
+    background-color: #252525;
+    min-height: 88vh;
+}
+
+div.maincontent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 7vh;
+    padding: 10px;
+}
