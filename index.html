@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/mainstyle.css">
     <link rel="stylesheet" href="/css/footerstyle.css">
     <link rel="stylesheet" href="/css/boxstyle.css">
-    <link rel="stylesheet" href="/css/modaladdcard.css">
+    <link rel="stylesheet" href="/css/modaladdstyle.css">
 
     <!-- Link icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -40,7 +40,21 @@
                     <h2>Escolha a sua ação:</h2>
                 </div>
                 <div class="modalcontent">
-                    <select class="selectaction" name="actionname" id="actionname"></select>
+                    <!-- <select class="selectaction" name="actionname" id="actionname"></select> -->
+                    <div class="search-container">
+                        <input 
+                            type="search" 
+                            id="search" 
+                            class="search-input"
+                            autocomplete="off"
+                            placeholder="Digite sua busca..." 
+                            aria-label="Campo de busca"
+                            oninput="searchJson()">
+                        <button class="search-button">
+                            <i>&#128269;</i> <!-- Código Unicode para uma lupa -->
+                        </button>
+                    </div>
+                    <ul id="results" class="search-results"></ul>
                 </div>
                 <div class="modalbuttons">
                     <button class="btnmodal" id="btncanel">Cancelar</button>
@@ -66,6 +80,7 @@
     <!-- Link's Scripts -->
     <script src="javascript/script.js"></script>
     <script src="javascript/addbox.js"></script>
+    <script src="javascript/jsonsearch.js"></script>
     
 </body>
 </html>
