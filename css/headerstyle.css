@@ -11,13 +11,25 @@ div.contentheader {
     height: 7vh;
 }
 
+div.logo {
+    display: flex;
+}
+
+div.logo a.btnlogo {
+    text-decoration: none;
+}
+
+div.logo a.btnlogo h1 {
+    color: #252525;
+}
+
 div.logo img {
     margin-left: 20px;
     width: 40px;
     height: 40px;
 }
 
-button.add {
+button.openmodal {
     margin-right: 20px;
     border-radius: 10px;
     width: 80px;
@@ -29,7 +41,7 @@ button.add {
     transition: 0.3s;
 }
 
-button.add:hover {
+button.openmodal:hover {
     background-color: #b39ddb;
     color: #252525
 }

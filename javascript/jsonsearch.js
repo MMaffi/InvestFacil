@@ -1,14 +1,13 @@
-// Simulando um arquivo JSON (pode ser substituído por uma URL real)
-const dataUrl = 'json/data.json'; // Caminho do arquivo JSON
+const dataUrl = 'json/data.json';
 
-let jsonData = []; // Variável para armazenar os dados carregados
+let jsonData = [];
 
 // Função para carregar os dados do JSON
 async function loadJson() {
     try {
         const response = await fetch(dataUrl);
         if (!response.ok) throw new Error('Erro ao carregar o JSON');
-        jsonData = await response.json(); // Armazena os dados no array jsonData
+        jsonData = await response.json();
     } catch (error) {
         console.error(error);
     }
@@ -18,17 +17,16 @@ async function loadJson() {
 function searchJson() {
     const searchInput = document.getElementById('search');
     if (searchInput) {
-        const searchValue = searchInput.value.toLowerCase();  // Valor atualizado da busca
+        const searchValue = searchInput.value.toLowerCase();
         
         // Verificar se o campo está vazio
         if (searchValue === '') {
-            document.getElementById('results').innerHTML = '';  // Limpar lista se estiver vazio
+            document.getElementById('results').innerHTML = '';
             return;
         }
 
         const resultsContainer = document.getElementById('results');
 
-        // Limpa os resultados anteriores, apenas se o campo não estiver vazio
         resultsContainer.innerHTML = '';
 
         // Filtra os dados do JSON
@@ -39,7 +37,8 @@ function searchJson() {
         // Adiciona os resultados na lista
         filteredData.forEach(item => {
             const li = document.createElement('li');
-            li.textContent = item.name;  // Exibe o nome do item
+            li.id = 'searchli'
+            li.textContent = item.name;
             resultsContainer.appendChild(li);
         });
     }

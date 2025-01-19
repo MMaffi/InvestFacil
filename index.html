@@ -24,23 +24,23 @@
         <div class="interface">
             <div class="contentheader">
                 <div class="logo">
-                    <a href="" id="btnlogo"><img src="images/investfacil-logo.png" alt="logo"></a>
+                    <a href="" class="btnlogo"><img src="images/investfacil-logo.png" alt="logo"></a>
+                    <a href="" class="btnlogo"><h1>InvestFácil</h1></a>
                 </div>
-                <h1>InvestFácil</h1>
                 <div class="btnadd">
-                    <button class="add" id="btnadd">Adicionar</button>
+                    <button class="openmodal" id="btnopen">Adicionar</button>
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <!-- MODALS -->
         <div class="backmodals" id="backmodals">
             <div class="modaladdcard" id="modaladdcard">
                 <div class="modaltitle">
                     <h2>Escolha a sua ação:</h2>
                 </div>
                 <div class="modalcontent">
-                    <!-- <select class="selectaction" name="actionname" id="actionname"></select> -->
                     <div class="search-container">
                         <input 
                             type="search" 
@@ -51,7 +51,7 @@
                             aria-label="Campo de busca"
                             oninput="searchJson()">
                         <button class="search-button">
-                            <i>&#128269;</i> <!-- Código Unicode para uma lupa -->
+                            <i>&#128269;</i>
                         </button>
                     </div>
                     <ul id="results" class="search-results"></ul>
@@ -61,7 +61,7 @@
                     <button class="btnmodal">Adicionar</button>
                 </div>
             </div>
-        </div>
+        </div> <!-- MODALS END -->
 
         <div class="maincontent">
             <section class="box">
@@ -71,15 +71,15 @@
         </div><!--maincontent end-->
     </main>
     <footer>
-        <div class="github">
+        <p class="copyright">&copy; 2025 InvestFácil. Todos os Direitos Reservados.</p>
+        <div class="socials">
             <a href="https://github.com/MMaffi" target="_blank"><i class="bi bi-github"></i></a>
         </div>
-        <p class="copyright">&copy; 2025 InvestFácil. Todos os Direitos Reservados.</p>
     </footer>
 
     <!-- Link's Scripts -->
     <script src="javascript/script.js"></script>
-    <script src="javascript/addbox.js"></script>
+    <script src="javascript/modalscripts.js"></script>
     <script src="javascript/jsonsearch.js"></script>
     
 </body>

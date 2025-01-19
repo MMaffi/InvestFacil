@@ -11,11 +11,14 @@ footer {
 
 footer i {
     cursor: pointer;
-    padding-left: 10px;
     font-size: 20px;
     color: #252525;
 }
 
 footer .copyright {
-    margin: auto;
+    padding-left: 10px;
+}
+
+footer .socials {
+    padding-right: 10px;
 }
