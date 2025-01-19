@@ -67,7 +67,7 @@ div.modalbuttons {
 
 .search-button {
     margin-bottom: 10px;
-    height: 39px;
+    height: 40px;
     background-color: #b39ddb;
     color: white;
     padding: 10px 15px;
@@ -124,7 +124,12 @@ div.modalbuttons {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    height: 60px;  /* Altura fixa dos itens */
+    height: 60px;  /* Fixed height of items */
+    transition: 0.5s;
+}
+
+.search-results li:hover {
+    background-color: #b39ddb;
 }
 
 .search-results.single-result {
@@ -133,11 +138,24 @@ div.modalbuttons {
 }
 
 .search-results.single-result li {
-    height: 100px;  /* Mantenha o mesmo tamanho fixo */
+    height: 100px;  /* Keep the same fixed size */
 }
 
 .search-results.multi-col {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.custom-checkbox::after {
+    content: ''; /*  Empty element to create the "check" */
+    display: block;
+    width: 3px;
+    height: 7px;
+    border: solid #fff; /* "check" color */
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 3px;
 }
 
 button.btnmodal {
