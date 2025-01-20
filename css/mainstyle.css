@@ -1,7 +1,8 @@
 /* Main Style */
 main {
     background-color: #252525;
-    min-height: 88vh;
+    min-height: 95vh;
+    padding-top: 7vh;
 }
 
 div.maincontent {
@@ -9,6 +10,6 @@ div.maincontent {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    margin-top: 7vh;
     padding: 10px;
+
 }

@@ -40,6 +40,7 @@ function searchJson() {
 
             li.id = 'searchli';
             li.textContent = item.name;
+            li.style.userSelect = 'none';
             li.style.position = 'relative';
             li.style.padding = '10px';
             li.style.border = '1px solid #ddd';
@@ -62,8 +63,8 @@ function searchJson() {
                     checkbox.style.position = 'absolute';
                     checkbox.style.top = '5px';
                     checkbox.style.right = '5px';
-                    checkbox.style.width = '10px';
-                    checkbox.style.height = '10px';
+                    checkbox.style.width = '13px';
+                    checkbox.style.height = '13px';
                     checkbox.style.borderRadius = '50%';
                     checkbox.style.border = '2px solid #9b7ab9';
                     checkbox.style.backgroundColor = '#9b7ab9';

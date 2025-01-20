@@ -64,5 +64,8 @@
     { "id": 63, "name": "MULT3", "company": "Multiplan", "sector": "Imobiliário" },
     { "id": 64, "name": "CRPG5", "company": "CPFL Energia", "sector": "Energia" },
     { "id": 65, "name": "PETR4", "company": "Petrobras", "sector": "Petróleo" },
-    { "id": 66, "name": "BRML3", "company": "Bramont", "sector": "Alimentos" }
+    { "id": 66, "name": "BRML3", "company": "Bramont", "sector": "Alimentos" },
+    { "id": 67, "name": "TAEE3", "company": "Taesa S.A.", "sector": "Energia" },
+    { "id": 68, "name": "TAEE4", "company": "Taesa S.A.", "sector": "Energia" },
+    { "id": 69, "name": "TAEE11", "company": "Taesa S.A.", "sector": "Energia" }
 ]

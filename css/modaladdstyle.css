@@ -124,7 +124,7 @@ div.modalbuttons {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    height: 60px;  /* Fixed height of items */
+    height: 65px;  /* Fixed height of items */
     transition: 0.5s;
 }
 
@@ -148,14 +148,14 @@ div.modalbuttons {
 .custom-checkbox::after {
     content: ''; /*  Empty element to create the "check" */
     display: block;
-    width: 3px;
-    height: 7px;
+    width: 4px;
+    height: 6px;
     border: solid #fff; /* "check" color */
     border-width: 0 1px 1px 0;
     transform: rotate(45deg);
     position: absolute;
     top: 0px;
-    left: 3px;
+    left: 2px;
 }
 
 button.btnmodal {
